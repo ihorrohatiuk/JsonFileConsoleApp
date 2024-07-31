@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonFileConsoleApp", "JsonFileConsoleApp\JsonFileConsoleApp.csproj", "{DC23B6E6-5636-4C7A-820F-C47B80340259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC23B6E6-5636-4C7A-820F-C47B80340259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC23B6E6-5636-4C7A-820F-C47B80340259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC23B6E6-5636-4C7A-820F-C47B80340259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC23B6E6-5636-4C7A-820F-C47B80340259}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E32C3F2-742F-4195-B5C2-057B6A356BFB}
+	EndGlobalSection
+EndGlobal
