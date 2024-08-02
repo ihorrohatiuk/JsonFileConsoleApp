@@ -8,7 +8,7 @@ public static class DisplayService
     public static void DisplayCompanyInfo(Company company)
     {
         Console.WriteLine($"Company name:    {company.Name}");
-        Console.WriteLine($"Employees amount: {company.Employees.Count}");
+        Console.WriteLine($"Employees amount: {company.Employees.Count}\n");
     }
     public static void DisplayEmployees(List<Employee> employees)
     {
@@ -22,8 +22,7 @@ public static class DisplayService
             Console.WriteLine($"Email:       {employee.Email}");
             Console.WriteLine($"Phone:       {employee.PhoneNumber}");
             Console.WriteLine($"Email:       {employee.Salary}");
-            Console.WriteLine($"Hire date:   {employee.HireDate}");
-            Console.WriteLine();
+            Console.WriteLine($"Hire date:   {employee.HireDate}\n");
         }
     }
 }

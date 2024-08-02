@@ -13,15 +13,20 @@ public class ParseService
     
     public async Task<Company> ReadEmployeesFromJsonToListAsync()
     {
-        if (!File.Exists(_pathToJsonFile)) 
+        if (!File.Exists(_pathToJsonFile) || _pathToJsonFile is null) 
             throw new FileNotFoundException($"Cannot find the file: ", _pathToJsonFile);
 
+        Company company;
         using StreamReader reader = new StreamReader(_pathToJsonFile);
         var jsonFile = await reader.ReadToEndAsync();
-        Company company = JsonConvert.DeserializeObject<Company>(jsonFile);
-
-        if (company is null) 
-            throw new Exception("Failed to deserialize JSON data.");
+        try
+        {
+            company = JsonConvert.DeserializeObject<Company>(jsonFile);
+        }
+        catch (Exception e)
+        {
+            throw new InvalidOperationException("Failed to deserialize JSON data.");
+        }
 
         return company;
     }

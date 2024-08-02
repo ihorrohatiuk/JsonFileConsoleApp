@@ -9,9 +9,6 @@ public class Program
 {
     static void Main(string[] args)
     {
-        
-        var parseService = new ParseService("../../../employees.json");
-
         var company = GetCompanyFromJsonAsync().Result;
 
         DisplayService.DisplayCompanyInfo(company);
